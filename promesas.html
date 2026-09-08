@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>101 Promesas | César & Gabriela</title>
+    <!-- Importamos Montserrat y Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        .reason-item {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center !important;
+        }
+        .reason-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px 0 rgba(255, 105, 180, 0.25);
+        }
+        .titulo-neto {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 1.1rem !important;
+            font-weight: 600 !important;
+            color: #ffb6c1 !important;
+            text-align: center !important;
+            display: block !important;
+            width: 100% !important;
+            margin: 0 auto 10px auto !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            border: none !important;
+            background: none !important;
+            text-decoration: none !important;
+        }
+        .titulo-neto::after, .titulo-neto::before {
+            display: none !important;
+            content: none !important;
+        }
+        .reason-text {
+            font-family: 'Poppins', sans-serif !important;
+            font-size: 0.95rem !important;
+            text-align: center !important;
+            color: #f3f0ff !important;
+            font-weight: 600 !important;
+            margin: 0 !important;
+            line-height: 1.5 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="heart-container"></div>
+    <main class="container">
+        <header class="hero">
+            <a href="index.html" class="btn-back">← Regresar al Inicio</a>
+            <h1 class="title-animated">Mis 101 Promesas para Ti 💍</h1>
+            <p class="subtitle">Mi compromiso de amor para ti mi amor</p>
+        </header>
+
+        <section class="reasons-scroll-grid">
+            <div class="reason-item"><div class="titulo-neto">Promesa 1</div><p class="reason-text">Cuidar y proteger siempre tu hermoso corazón, mi Punchita.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 2</div><p class="reason-text">Ser tu apoyo incondicional en cada meta y sueño que quieras alcanzar.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 3</div><p class="reason-text">Hacerte sonreír e iluminar tus días como mi solecito bello.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 4</div><p class="reason-text">Amarte, respetarte y elegirte absolutamente todos los días de mi vida.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 5</div><p class="reason-text">Escucharte siempre con paciencia, empatía y todo mi amor.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 6</div><p class="reason-text">Abrazarte fuerte cuando más lo necesites para hacerte sentir segura.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 7</div><p class="reason-text">Celebrar cada uno de tus triunfos como si fueran míos propios.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 8</div><p class="reason-text">Ser paciente en los días difíciles y buscar siempre resolver todo juntos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 9</div><p class="reason-text">Mantener viva la chispa y el detalle en nuestra relación siempre.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 10</div><p class="reason-text">Construir a tu lado un futuro lleno de paz, alegría y seguridad.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 11</div><p class="reason-text">Respetar tus espacios y apoyarte en tu crecimiento personal.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 12</div><p class="reason-text">Decirte todos los días lo hermosa que eres y cuánto te amo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 13</div><p class="reason-text">Ser tu refugio seguro cuando el mundo afuera se ponga pesado.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 14</div><p class="reason-text">Cuidarte con ternura cuando te enfermes o estés bajita de energía.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 15</div><p class="reason-text">Nunca irnos a dormir enojados sin antes solucionar las cosas.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 16</div><p class="reason-text">Hacerte reír con mis tonterías solo para ver tu carita feliz.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 17</div><p class="reason-text">Preparar sorpresas bonitas para recordarte lo especial que eres.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 18</div><p class="reason-text">Honrar los meses maravillosos que llevamos y los años que vienen.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 19</div><p class="reason-text">Ser fiel a nuestro amor y a los planes que construimos juntos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 20</div><p class="reason-text">Tomar tu mano con orgullo en cada lugar a donde vayamos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 21</div><p class="reason-text">Apoyar tus locuras y ser tu cómplice en cada aventura.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 22</div><p class="reason-text">Recordarte cada mañana que eres la dueña de mis pensamientos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 23</div><p class="reason-text">Cuidar de nuestra relación como el tesoro más grande que tengo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 24</div><p class="reason-text">Ser transparente y honesto contigo en cada momento.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 25</div><p class="reason-text">Escuchar tus opiniones y valorarlas siempre en nuestras decisiones.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 26</div><p class="reason-text">Hacerte sentir la mujer más amada del universo entero.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 27</div><p class="reason-text">Aprender de nuestros errores para ser mejores cada día por los dos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 28</div><p class="reason-text">Compartir mis alegrías y mis tristezas contigo sin reservas.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 29</div><p class="reason-text">Darlo todo de mí para que nuestra historia sea eterna.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 30</div><p class="reason-text">Ser tu compañero de vida leal, tierno y dedicado.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 31</div><p class="reason-text">Cuidar cada detalle para que sepas lo mucho que te pienso.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 32</div><p class="reason-text">Mirarte con los mismos ojitos de enamorado toda la vida.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 33</div><p class="reason-text">Comprender tus silencios y darte tu espacio cuando lo necesites.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 34</div><p class="reason-text">Impulsarte a ser la mejor versión de ti misma sin dudar.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 35</div><p class="reason-text">Convertirme en el hombre que te haga sentir protegida y feliz.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 36</div><p class="reason-text">Valorar cada segundo que la vida nos permita pasar juntos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 37</div><p class="reason-text">Estar a tu lado en las buenas, en las malas y en las más difíciles.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 38</div><p class="reason-text">Hacerte sentir única porque no hay nadie como tú en el mundo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 39</div><p class="reason-text">Recordar siempre los pequeños detalles que te hacen sonreír.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 40</div><p class="reason-text">Construir un hogar donde la paz y el amor reinen todos los días.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 41</div><p class="reason-text">Consentirte y darte tus apapachos cuando más lo pidas.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 42</div><p class="reason-text">Cuidar de tu hermosa sonrisa para que nunca se apague.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 43</div><p class="reason-text">Ser tu fan número uno en cada proyecto que emprendas.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 44</div><p class="reason-text">Recordarte cuánto vales cuando tengas un día gris.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 45</div><p class="reason-text">Aceptar tus manías y amarlas tanto como a ti.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 46</div><p class="reason-text">Hacerte parte fundamental de cada decisión importante.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 47</div><p class="reason-text">Mantener la paciencia y la ternura en los momentos de estrés.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 48</div><p class="reason-text">Demostrarte con hechos que mi amor por ti es sincero y real.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 49</div><p class="reason-text">Vivir cada cita contigo como si fuera la primera vez.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 50</div><p class="reason-text">Nunca dejar de enamorarte con detalles, sin importar el tiempo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 51</div><p class="reason-text">Proteger nuestra relación de cualquier comentario o influencia negativa.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 52</div><p class="reason-text">Agradecerle a la vida todos los días por haberte cruzado en mi camino.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 53</div><p class="reason-text">Compartir risas, abrazos y momentos inolvidables a tu lado.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 54</div><p class="reason-text">Ser el primero en alentarte cuando sientas que no puedes más.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 55</div><p class="reason-text">Cuidar con el alma cada recuerdo bonito que creamos juntos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 56</div><p class="reason-text">Ser detallista no solo en fechas especiales, sino en cualquier martes.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 57</div><p class="reason-text">Respetar tus gustos y disfrutar compartiendo tiempo contigo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 58</div><p class="reason-text">Hacerte sentir que tienes un compañero en quien confiar plenamente.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 59</div><p class="reason-text">Conservar la ilusión y la magia en nuestro noviazgo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 60</div><p class="reason-text">Enseñar con acciones lo mucho que te amo y te respeto.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 61</div><p class="reason-text">Estar dispuesto a ceder y dialogar por el bien de los dos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 62</div><p class="reason-text">Apoyar tus sueños más grandes y volar juntos hacia ellos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 63</div><p class="reason-text">Hacerte sentir segura de que mi amor por ti nunca cambiará.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 64</div><p class="reason-text">Ser tu pañuelo de lágrimas cuando necesites desahogarte.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 65</div><p class="reason-text">Celebrar cada pequeño logro tuyo con mucha alegría.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 66</div><p class="reason-text">Cuidar de ti con el mismo cariño con el que tú cuidas de mí.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 67</div><p class="reason-text">Hacer que cada día a mi lado valga la pena por completo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 68</div><p class="reason-text">Mantener la lealtad intacta en cada segundo de nuestra relación.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 69</div><p class="reason-text">Inventar nuevas formas de decirte lo mucho que te adoro.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 70</div><p class="reason-text">Ser un novio atento, cariñoso y presente en tu vida.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 71</div><p class="reason-text">Acompañarte a donde quieras ir con tal de verte sonreír.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 72</div><p class="reason-text">Cuidar tus manos y caminar siempre tomados de la mano.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 73</div><p class="reason-text">Ser paciente cuando las cosas no salgan como esperamos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 74</div><p class="reason-text">Darte besitos en la frente para recordarte cuánto te cuido.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 75</div><p class="reason-text">Mantener viva la ternura que nos caracteriza como pareja.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 76</div><p class="reason-text">Ayudarte a cargar tus preocupaciones cuando te pesen mucho.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 77</div><p class="reason-text">Ser el motivo por el cual te sientas orgullosa de tener a tu lado.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 78</div><p class="reason-text">Construir recuerdos hermosos que guardemos en el corazón para siempre.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 79</div><p class="reason-text">Demostrarte que mi cariño por ti es más fuerte que cualquier obstáculo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 80</div><p class="reason-text">Hacerte sentir especial todos los días del año sin excepción.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 81</div><p class="reason-text">Respetar tus tiempos y tus procesos personales con amor.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 82</div><p class="reason-text">Ser honesto incluso cuando sea difícil, porque confío en ti.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 83</div><p class="reason-text">Buscar siempre tu bienestar y felicidad antes que nada.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 84</div><p class="reason-text">Hacerte reír con ocurrencias tontas en los momentos más inesperados.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 85</div><p class="reason-text">Cuidar celosamente la hermosa confianza que me has regalado.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 86</div><p class="reason-text">Ser un pilar fuerte en el que puedas apoyarte sin dudar.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 87</div><p class="reason-text">Aprender a cocinar tus platos favoritos para consentirte.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 88</div><p class="reason-text">Dar lo mejor de mí para que nuestra historia sea un cuento hermoso.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 89</div><p class="reason-text">Mirar hacia el mismo horizonte contigo de la mano.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 90</div><p class="reason-text">Hacerte sentir protegida y sumamente amada todos los días.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 91</div><p class="reason-text">Valorar tus consejos y aprender de tu sabiduría.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 92</div><p class="reason-text">Ser tierno, atento y detallista en cada etapa de nuestra vida.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 93</div><p class="reason-text">Apoyarte incondicionalmente en tus metas profesionales y personales.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 94</div><p class="reason-text">Recordarte lo mucho que significas para mí en cada mensaje.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 95</div><p class="reason-text">Hacerte sonreír incluso en los días donde todo parezca gris.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 96</div><p class="reason-text">Cuidar nuestra relación como el proyecto más importante de mi vida.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 97</div><p class="reason-text">Ser tu cómplice, tu novio y tu mejor amigo siempre.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 98</div><p class="reason-text">Mantener la ilusión viva y los planes de futuro firmes.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 99</div><p class="reason-text">Abrazarte con tanta fuerza que se borren todas tus tristezas.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 100</div><p class="reason-text">Elegirte a ti una y mil veces en esta y en cualquier vida.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Promesa 101</div><p class="reason-text">Amarte fiel e infinitamente por el resto de mis días, mi princesita hermosa.</p></div>
+        </section>
+
+        <div class="text-center">
+            <button class="btn-master" onclick="sparkleBurst(event)">Manifestemos las promesitas ✨</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

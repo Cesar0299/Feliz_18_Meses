@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Galería | César & Gabriela</title>
+    <!-- Importamos Montserrat y Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            padding: 20px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-item {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px 0 rgba(255, 105, 180, 0.25);
+        }
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            height: 240px;
+            object-fit: center; /* Evita que las s o videos se estiren o distorsionen */
+            display: block;
+        }
+        .gallery-caption {
+            font-family: 'Poppins', sans-serif !important;
+            font-size: 0.9rem !important;
+            color: #f3f0ff !important;
+            font-weight: 500 !important;
+            padding: 15px !important;
+            margin: 0 !important;
+            line-height: 1.4 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="heart-container"></div>
+    <main class="container">
+        <header class="hero">
+            <a href="index.html" class="btn-back">← Regresar al Inicio</a>
+            <h1 class="title-animated">Nuestros Momentos Juntos 📸</h1>
+            <p class="subtitle">Cada recuerdo juntitos mi vida......❤️</p>
+        </header>
+
+        <section class="gallery-grid">
+            <!--  1 -->
+            <div class="gallery-item">
+                <img src="img/1.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Una de nuestras citas  inolvidable ❤️</p>
+            </div>
+
+            <!--  2 -->
+            <div class="gallery-item">
+                <img src="img/2.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Nuestro orimer viajecito ✨</p>
+            </div>
+
+            <!--  3 -->
+            <div class="gallery-item">
+                <img src="img/3.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Aqui modo anime, I LOVE YOU ☀️</p>
+            </div>
+
+            <!--  4 -->
+            <div class="gallery-item">
+                <img src="img/4.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Nuestra primera fotito de novios 🌸</p>
+            </div>
+
+            <!--  5 -->
+            <div class="gallery-item">
+                <img src="img/5.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Construyendo los mejores recuerdos juntos 💍</p>
+            </div>
+
+            <!--  6 -->
+            <div class="gallery-item">
+                <img src="img/6.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Eligiéndote hoy y siempre, mi princesita 💖</p>
+            </div>
+
+            <!-- VIDEO 1 INTERCALADO -->
+            <div class="gallery-item">
+                <video controls preload="metadata">
+                    <source src="img/2.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+                <p class="gallery-caption">Amo este videito 🎥❤️</p>
+            </div>
+
+            <!--  7 -->
+            <div class="gallery-item">
+                <img src="img/7.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Otra vez juntitos 🥰</p>
+            </div>
+
+            <!--  8 -->
+            <div class="gallery-item">
+                <img src="img/8.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Siempre rosas para mi amor 🌷</p>
+            </div>
+
+            <!--  9 -->
+            <div class="gallery-item">
+                <img src="img/9.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Tú y yo haciendo el equipo perfecto 🌟</p>
+            </div>
+
+            <!--  10 -->
+            <div class="gallery-item">
+                <img src="img/10.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Besitos siempre y muy juntitos 💕</p>
+            </div>
+
+            <!--  11 -->
+            <div class="gallery-item">
+                <img src="img/11.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Tu carita tierna que me enamora cada día 💫</p>
+            </div>
+
+            <!--  12 -->
+            <div class="gallery-item">
+                <img src="img/12.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Compartiendo la vida de la forma más bonita 🌻</p>
+            </div>
+
+            <!-- VIDEO 2 INTERCALADO -->
+            <div class="gallery-item">
+                <video controls preload="metadata">
+                    <source src="img/1.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+                <p class="gallery-caption">Paseito al museo ✨</p>
+            </div>
+
+            <!--  13 -->
+            <div class="gallery-item">
+                <img src="img/13.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Contigo cualquier lugar se siente mágico 🌙</p>
+            </div>
+
+            <!--  14 -->
+            <div class="gallery-item">
+                <img src="img/14.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Mirándote como el primer día que te conocí 💓</p>
+            </div>
+
+            <!--  15 -->
+            <div class="gallery-item">
+                <img src="img/15.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Compartiendo la vida de la forma más bonita 🫶</p>
+            </div>
+
+            <!--  16 -->
+            <div class="gallery-item">
+                <img src="img/16.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Amos nuestros besitos amor🍃</p>
+            </div>
+
+            <!--  17 -->
+            <div class="gallery-item">
+                <img src="img/17.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Eres mi persona favorita en todo el mundo 💌</p>
+            </div>
+
+            <!--  18 -->
+            <div class="gallery-item">
+                <img src="img/18.jpeg" alt="" loading="lazy">
+                <p class="gallery-caption">Por una eternidad entera tomados de la mano 🥂</p>
+            </div>
+
+            <!-- VIDEO 3 INTERCALADO -->
+            <div class="gallery-item">
+                <video controls preload="metadata">
+                    <source src="img/4.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+                <p class="gallery-caption">Que nunca falten los besitos 🎬💖</p>
+            </div>
+
+        </section>
+
+        <div class="text-center" style="margin-top: 30px;">
+            <button class="btn-master" onclick="sparkleBurst(event)">¡Te Amo Mucho, Gabriela! ✨</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

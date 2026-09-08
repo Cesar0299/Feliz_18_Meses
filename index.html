@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Punchita | César & Gabriela</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="heart-container"></div>
+    <main class="container">
+        <header class="hero">
+            <div class="badge">18 Meses Juntos ❤️</div>
+            <h1 class="title-animated">Hola, <span class="highlight">Mi Pricesita Hermosa</span></h1>
+            <p class="subtitle">Mi preciosa, mi solecito bello, mi punchita... esto es para ti.</p>
+        </header>
+        <nav class="nav-grid">
+            <a href="carta.html" class="nav-card btn-effect-neon" onclick="triggerEffect(event, 'loveLetter', 'carta.html')">
+                <div class="card-icon">💌</div>
+                <h2>Carta para mi novia</h2>
+                <span class="btn-custom">Click para leer</span>
+            </a>
+            <a href="promesas.html" class="nav-card btn-effect-shimmer" onclick="triggerEffect(event, 'ringGlow', 'promesas.html')">
+                <div class="card-icon">💍</div>
+                <h2>Mis 101 Promesas</h2>
+                <span class="btn-custom">Para nosotros</span>
+            </a>
+            <a href="razones.html" class="nav-card btn-effect-rainbow" onclick="triggerEffect(event, 'roseShower', 'razones.html')">
+                <div class="card-icon">🌹</div>
+                <h2>101 Razones</h2>
+                <span class="btn-custom">Porque te amo</span>
+            </a>
+            <a href="galeria.html" class="nav-card btn-effect-pop" onclick="triggerEffect(event, 'flashCamera', 'galeria.html')">
+                <div class="card-icon">📸</div>
+                <h2>Nuestra Galería</h2>
+                <span class="btn-custom">Nuestros Bellos Momentos</span>
+            </a>
+        </nav>
+        <div class="celebration-zone">
+            <button class="btn-master" onclick="fireworksMaster()">Activa la magia 🎉🎉🎉</button>
+        </div>
+        <footer><p>Hecho con amor para mi Gabicita ❤️</p></footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

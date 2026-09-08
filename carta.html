@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para mi Hadita  | César & Gabriela</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="heart-container"></div>
+    <main class="container">
+        <a href="index.html" class="btn-back">← Regresar al Inicio</a>
+        
+        <!-- Sobre Elegante -->
+        <div id="envelope-section" class="text-center">
+            <h1 class="title-animated">Una Carta para Ti 💌</h1>
+            <p class="subtitle">Mi hermosa novia.....</p>
+            <div class="envelope-container">
+                <div class="envelope" id="main-envelope" onclick="openEnvelope(event)">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-text">&nbsp &nbsp &nbsp &nbsp Para &nbsp &nbsp  &nbsp   &nbsp &nbsp &nbsp Gabicita &nbsp &nbsp &nbsp ❤️</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carta Escrita Elegante -->
+        <article class="letter-card" id="letter-content">
+            <h1 class="title-animated">Para mi Princesita Hermosa ✨</h1>
+            <div class="letter-body">
+                <p>Mi amada  Punchita, </p>
+                <p>Hoy cumplimos 1 año y medio. 18 meses maravillosos donde te has convertido en mi solecito bello, esa luz tan radiante en mi vida y llena mi corazón de niño pequeño.</p>
+                <p>No existen palabras suficientes para expresar todo lo que siento por ti. Este detalle no es nada comparado con todo el amor y lo que  me has dado, mi vida. Quiero que sepas que no he querido que te sientas ignorada algunas veces ; perdóname si alguna vez lo sentiste así. La verdad es que estaba preparando esta página en secreto para ti, para que veas lo mucho que te amo. Quise que fuera una sorpresa y creo que me pasé un poquito jijijiji, sinceramente me tomó más tiempo del esperado.
+Ahora ya sabes por qué  algunas noches estaba ocupado o  respondía tarde   o por qué  a veces mis días libres no iba a verte , estaba muy metido en este proyecto incluso ahorita , 07/09/26 a las 20:00 horas, sigo dándole los últimos toquesitos para que quede de la refurifunflay este proyectito para ti mi amor. Espero contar con tu perdón, porque si no, sere un papita tiste.
+Gracias por ser mi niña preciosa, por esas sonrisas que curan mi corazoncito y por elegir caminar a mi lado en cada paso. Eres y serás siempre el regalo más bonito que diosito  me pudo dar..</p>
+                <p>Te amo demasiado, hoy y para siempre, asi tambien dire en nuestra boda okis?.</p>
+                <p class="signature">Tuyo siempre, tu Pible tikitito ❤️</p>
+            </div>
+            <button class="btn-letter-pulse" onclick="heartExplosion(event)">Te amo muchísimo! 💖</button>
+        </article>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        function openEnvelope(e) {
+            const envelope = document.getElementById('main-envelope');
+            const envelopeSection = document.getElementById('envelope-section');
+            const letterCard = document.getElementById('letter-content');
+            
+            envelope.classList.add('open');
+            heartExplosion(e);
+
+            setTimeout(() => {
+                envelopeSection.style.display = 'none';
+                letterCard.classList.add('visible');
+            }, 600);
+        }
+    </script>
+</body>
+</html>

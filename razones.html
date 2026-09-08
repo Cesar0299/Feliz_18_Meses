@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>101 Razones | César & Gabriela</title>
+    <!-- Importamos Montserrat y Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        .reason-item {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center !important;
+        }
+        .reason-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px 0 rgba(255, 105, 180, 0.25);
+        }
+        .titulo-neto {
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 1.1rem !important;
+            font-weight: 600 !important;
+            color: #ffb6c1 !important;
+            text-align: center !important;
+            display: block !important;
+            width: 100% !important;
+            margin: 0 auto 10px auto !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            border: none !important;
+            background: none !important;
+            text-decoration: none !important;
+        }
+        .titulo-neto::after, .titulo-neto::before {
+            display: none !important;
+            content: none !important;
+        }
+        .reason-text {
+            font-family: 'Poppins', sans-serif !important;
+            font-size: 0.95rem !important;
+            text-align: center !important;
+            color: #f3f0ff !important;
+            font-weight: 600 !important;
+            margin: 0 !important;
+            line-height: 1.5 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="heart-container"></div>
+    <main class="container">
+        <header class="hero">
+            <a href="index.html" class="btn-back">← Regresar al Inicio</a>
+            <h1 class="title-animated">101 Razones por las que te Amo 🌹</h1>
+            <p class="subtitle">Mi princesita hermosa, mi solecito bello, mi punchita...</p>
+        </header>
+
+        <section class="reasons-scroll-grid">
+            <div class="reason-item"><div class="titulo-neto">Razón 1</div><p class="reason-text">Porque eres mi princesita hermosa y la dueña de mi corazón.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 2</div><p class="reason-text">Porque eres el solecito bello que ilumina cada uno de mis días.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 3</div><p class="reason-text">Por ser mi punchita favorita y más tierna en todo el universo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 4</div><p class="reason-text">Por la dulzura infinita de tu mirada y tu hermosa sonrisa.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 5</div><p class="reason-text">Por la paz tan linda que siento cuando me abrazas.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 6</div><p class="reason-text">Porque tu risa es la melodía más hermosa que mis oídos pueden escuchar.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 7</div><p class="reason-text">Por la forma tan tierna en la que me demuestras tu cariño.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 8</div><p class="reason-text">Porque sacas siempre lo mejor de mí y me inspiras a ser mejor.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 9</div><p class="reason-text">Por los momentos tan divertidos que pasamos juntos hablando de todo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 10</div><p class="reason-text">Por tu paciencia, tu comprensión y por ser mi mejor compañía.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 11</div><p class="reason-text">Porque me entiendes con solo una mirada y sin necesidad de hablar.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 12</div><p class="reason-text">Por la nobleza tan grande que tiene tu hermoso corazón.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 13</div><p class="reason-text">Porque a tu lado me siento en casa sin importar en dónde estemos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 14</div><p class="reason-text">Por cómo brillas con luz propia en cada lugar al que vas.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 15</div><p class="reason-text">Porque me das fuerzas cuando siento que las mías se agotan.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 16</div><p class="reason-text">Por cada detalle hermoso que tienes conmigo día a día.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 17</div><p class="reason-text">Porque haces que los días grises se vuelvan coloridos con tu presencia.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 18</div><p class="reason-text">Por los meses maravillosos que hemos compartido llenos de amor.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 19</div><p class="reason-text">Porque eres una mujer increíble, fuerte, inteligente y hermosa.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 20</div><p class="reason-text">Por cómo se detiene el tiempo cada vez que te doy un beso.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 21</div><p class="reason-text">Porque confías en mí y me haces sentir muy especial.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 22</div><p class="reason-text">Por la complicidad tan hermosa que hemos construido tú y yo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 23</div><p class="reason-text">Porque me encanta escucharte hablar de las cosas que te apasionan.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 24</div><p class="reason-text">Por tu ternura infinita que me desarma por completo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 25</div><p class="reason-text">Porque haces que mi vida tenga un sentido mucho más bonito.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 26</div><p class="reason-text">Por la forma tan linda en la que arrugas tu naricita cuando te ríes.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 27</div><p class="reason-text">Porque apoyas mis proyectos y celebras mis pequeños logros.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 28</div><p class="reason-text">Porque eres mi refugio favorito contra el estrés del mundo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 29</div><p class="reason-text">Porque me has enseñado el verdadero significado del amor sincero.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 30</div><p class="reason-text">Por la forma tan pura en la que me miras y me haces suspirar.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 31</div><p class="reason-text">Porque eres la primera persona en la que pienso al despertar.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 32</div><p class="reason-text">Y la última en mi mente antes de quedarme dormido.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 33</div><p class="reason-text">Porque me aceptas con todos mis defectos y virtudes.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 34</div><p class="reason-text">Por cada carcajada que me sacas en los momentos más inesperados.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 35</div><p class="reason-text">Porque me das los abrazos más calentitos y reconfortantes.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 36</div><p class="reason-text">Porque eres una persona sumamente valiosa y especial.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 37</div><p class="reason-text">Por la manera en que cuidas de mí con tanto amor y esmero.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 38</div><p class="reason-text">Porque compartir la vida contigo es un privilegio enorme.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 39</div><p class="reason-text">Por tus ocurrencias tan divertidas que alegran cualquier tarde.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 40</div><p class="reason-text">Porque me inspiras a ser un hombre más detallista y amoroso.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 41</div><p class="reason-text">Por la seguridad y la paz que me transmite tu voz.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 42</div><p class="reason-text">Porque tienes un sentido del humor que combina perfecto con el mío.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 43</div><p class="reason-text">Por cómo te preocupas por my bienestar y mi felicidad.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 44</div><p class="reason-text">Porque eres hermosa por dentro y por fuera, sin una sola duda.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 45</div><p class="reason-text">Por las pláticas tan profundas que tenemos hasta altas horas.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 46</div><p class="reason-text">Porque me demuestras que el amor bonito sí existe.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 47</div><p class="reason-text">Por cada detalle chiquito que haces para alegrarme el día.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 48</div><p class="reason-text">Porque me haces sentir maripositas en el estómago como el primer día.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 49</div><p class="reason-text">Por la paciencia infinita que me tienes cuando más lo necesito.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 50</div><p class="reason-text">Por todos los hermosos momentos y planes que tenemos a futuro.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 51</div><p class="reason-text">Porque me encanta cómo brillas cuando estás emocionada por algo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 52</div><p class="reason-text">Por la forma tan tierna en la que me dices mis apodos de cariño.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 53</div><p class="reason-text">Porque eres mi compañera perfecta para cualquier locura.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 54</div><p class="reason-text">Por el respeto tan grande que hay en nuestra relación.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 55</div><p class="reason-text">Porque cada instante a tu lado se convierte en un recuerdo inolvidable.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 56</div><p class="reason-text">Por cómo haces latir mi corazón con solo mandar un mensaje.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 57</div><p class="reason-text">Porque tu inteligencia y tu forma de ver el mundo me fascinan.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 58</div><p class="reason-text">Por el brillo tan hermoso que tienen tus ojitos cuando sonríes.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 59</div><p class="reason-text">Porque me haces sentir el hombre más afortunado del planeta.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 60</div><p class="reason-text">Por tu valentía para enfrentar los retos que se te presentan.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 61</div><p class="reason-text">Porque me encanta tomar fotos de cada momento bonito contigo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 62</div><p class="reason-text">Por la manera tan linda en que me haces sentir amado y valorado.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 63</div><p class="reason-text">Porque construyes un ambiente de paz a mi alrededor.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 64</div><p class="reason-text">Por tus abrazos largos que curan cualquier cansancio.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 65</div><p class="reason-text">Porque eres mi inspiración constante para seguir adelante.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 66</div><p class="reason-text">Por cómo valoras los pequeños detalles que tengo para ti.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 67</div><p class="reason-text">Porque tu carita tierna es lo más lindo que veo todos los días.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 68</div><p class="reason-text">Por la complicidad que tenemos al compartir gustos y pasatiempos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 69</div><p class="reason-text">Porque me ayudas a ver el lado positivo de las cosas.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 70</div><p class="reason-text">Por la confianza tan hermosa que nos tenemos el uno al otro.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 71</div><p class="reason-text">Porque eres sumamente detallista y cariñosa conmigo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 72</div><p class="reason-text">Por cómo me defiendes y me apoyas ante cualquier situación.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 73</div><p class="reason-text">Porque cada día a tu lado descubro una razón nueva para amarte.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 74</div><p class="reason-text">Por la dulzura infinita que transmites con cada palabra tuya.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 75</div><p class="reason-text">Porque me encanta caminar contigo tomados de la mano por la calle.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 76</div><p class="reason-text">Por la forma en que perdonas y buscas siempre la armonía.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 77</div><p class="reason-text">Porque me haces sentir que todo es posible si estamos juntos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 78</div><p class="reason-text">Por tu voz tan dulce que me calma en los días estresantes.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 79</div><p class="reason-text">Porque tienes un corazón gigante lleno de bondad y empatía.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 80</div><p class="reason-text">Por la ilusión con la que planeamos nuestro futuro.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 81</div><p class="reason-text">Porque eres mi refugio seguro y mi lugar favorito en el mundo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 82</div><p class="reason-text">Por cómo me cuidas y te interesas por lo que me pasa.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 83</div><p class="reason-text">Porque cada beso tuyo sabe a paz, amor y felicidad pura.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 84</div><p class="reason-text">Por la alegría que contagias a todos los que te rodeamos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 85</div><p class="reason-text">Porque me das razones constantes para sonreír como un tonto.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 86</div><p class="reason-text">Por tu autenticidad y por no tener miedo de ser tú misma conmigo.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 87</div><p class="reason-text">Porque haces que los momentos sencillos se vuelvan extraordinarios.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 88</div><p class="reason-text">Por cómo valoras mi esfuerzo y mi dedicación hacia ti.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 89</div><p class="reason-text">Porque tienes una sonrisa que ilumina hasta el rincón más oscuro.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 90</div><p class="reason-text">Por la hermosa conexión mental y espiritual que compartimos.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 91</div><p class="reason-text">Porque me demuestras lealtad y amor genuino todos los días.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 92</div><p class="reason-text">Por los planes tan bonitos que hacemos pensando en el mañana.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 93</div><p class="reason-text">Porque eres la definición exacta de todo lo que está bien en mi vida.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 94</div><p class="reason-text">Por la ternura con la que me tratas en cada mensaje y llamada.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 95</div><p class="reason-text">Porque eres mi paz en medio del caos y mi alegría constante.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 96</div><p class="reason-text">Por cada risa compartida que guardo como un tesoro en mi memoria.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 97</div><p class="reason-text">Porque me haces creer en la magia de las almas que se encuentran.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 98</div><p class="reason-text">Por tu forma tan linda de dar amor sin esperar nada a cambio.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 99</div><p class="reason-text">Porque cada parte de ti me enamora un poquito más cada día.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 100</div><p class="reason-text">Porque eres el sueño más hermoso hecho realidad en mi vida.</p></div>
+            <div class="reason-item"><div class="titulo-neto">Razón 101</div><p class="reason-text">Porque sencillamente eres el amor de mi vida y no imagino mi mundo sin ti, Gabriela.</p></div>
+        </section>
+
+        <div class="text-center">
+            <button class="btn-master" onclick="roseRain()">Lluvia de Rosas de confeti 🌹</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
